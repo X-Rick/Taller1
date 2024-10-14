@@ -1,10 +1,12 @@
 body {
     margin: 0;
+    background-color: black;
 }
 
 
 .menu {
-    border: 2px solid black;
+    border: 2px solid blue;
+    background-color: black;
 }
 
 .AnimeScope {
@@ -33,7 +35,7 @@ body {
 
 
 .cuerpo {
-    
+    background-color: black;
     border: 2px solid red;
     height: 1700px;
     display: flex;
@@ -45,9 +47,32 @@ body {
     overflow: hidden;
 }
 
-.caruFto {
- height: 300px;
- width: 100%;   
+.carousel-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    background-color: black;
+
+    
+}
+
+.carousel-text {
+    flex: 1;
+    padding: 20px;
+    max-width: 50%;
+    color: aliceblue;
+}
+
+.carousel-image {
+    flex: 1;
+    max-width: 50%;
+}
+
+.carousel-image img {
+    width: 100%;
+    height: 500px;
 }
 
 .anime {
@@ -56,3 +81,4 @@ body {
     height: 200px;
     width: 150px;
 }
+
