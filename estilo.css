@@ -35,46 +35,28 @@ body {
 
 
 .cuerpo {
-    background-color: black;
+
     border: 2px solid red;
-    height: 1700px;
+    max-height: 500px;
     display: flex;
     flex-direction: column;
-
-    flex-wrap: wrap;
+    align-items: center;
     gap: 20px;
+    padding: 0;
     width: 100%;
     overflow: hidden;
 }
 
-.carousel-content {
+.carrusel {
+    background-image: url("https://preview.redd.it/ogmhbsgy8ht61.jpg?auto=webp&s=ed433d03fcb6e88bfd10db2b6e06afd496af32c1");
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 20px;
-    background-color: black;
-
-    
-}
-
-.carousel-text {
-    flex: 1;
-    padding: 20px;
-    max-width: 50%;
-    color: aliceblue;
-}
-
-.carousel-image {
-    flex: 1;
-    max-width: 50%;
-}
-
-.carousel-image img {
+    border: 1px solid blue;
+    max-height: 100%;
     width: 100%;
-    height: 500px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; 
 }
-
 .anime {
     margin: 50px;
     border: 1px solid blueviolet;
