@@ -14,7 +14,7 @@ const imag = [
     {
         imagen: 'https://a.storyblok.com/f/178900/1920x1080/fc9956de7a/dandadan-key-art-wide.png',
         titulo: 'Dandadan',
-        descripcion: 'Un manga que combina lo sobrenatural, la comedia y la acción. La historia sigue a un par de estudiantes de secundaria, Momo Ayase y Ken Takakura, quienes descubren el mundo de los extraterrestres y los espíritus después de un encuentro sobrenatural. Momo cree en fantasmas, mientras que Ken cree en extraterrestres. La trama se desenvuelve en torno a su lucha contra estas entidades y la creciente amistad entre ambos'
+        descripcion: 'Oculto, un friki que cree en los ovnis, y Ayase, su compañera criada por una abuela médium, vivirán una historia que les hará cuestionarse todo lo que han creído hasta el momento… Comedia y romance se unen en este singular manga del que todo el mundo habla en Japón ¿te lo vas a perder?Un manga que combina lo sobrenatural, la comedia y la acción.'
     },
     {
         imagen: 'https://akiraseihin.pe/wp-content/uploads/2023/05/BANNER-BLUELOCK-2.webp',
@@ -57,3 +57,31 @@ document.querySelector('.prev').addEventListener('click', antSlide);
 
 
 updateSlide(currentIndex);
+//pagina reproductor
+const dropdowns = document.querySelectorAll('.dropwon');
+dropdowns.forEach(dropwon => {
+    const select = dropwon.querySelector('.select');
+    const caret = dropwon.querySelector('.caret');
+    const menu = dropwon.querySelector('.menu1');
+    const options = dropwon.querySelectorAll('.menu1 li'); // Cambiado a querySelectorAll para obtener todas las opciones
+    const selected = dropwon.querySelector('.selected');
+
+    select.addEventListener('click', () => {
+        select.classList.toggle('select-clicked');
+        caret.classList.toggle('caret-rotate');
+        menu.classList.toggle('menu-open');
+    });
+
+    options.forEach(option => {
+        option.addEventListener('click', () => {
+            selected.innerText = option.innerText; // Actualiza el texto seleccionado
+            select.classList.remove('select-clicked');
+            caret.classList.remove('caret-rotate');
+            menu.classList.remove('menu-open');
+            options.forEach(option => {
+                option.classList.remove('active');
+            });
+            option.classList.add('active');
+        });
+    });
+});
