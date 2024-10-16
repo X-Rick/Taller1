@@ -81,17 +81,20 @@ body {
 }
 
 .carrusel-txt {
+    position: absolute;
+    bottom:20px;
+    left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 5%;
-    flex-basis: 25%;
     color:aliceblue;
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(2px);
     border-start-end-radius: 50%;
-    writing-mode: horizontal-tb;
-}
+    max-width: 300px;
+    
+} 
 
 .anime {
     margin: 50px;
