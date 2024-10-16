@@ -49,7 +49,7 @@ body {
 .carrusel {
     position: relative;
     width: 100%;
-    height: 500px;
+    height: 600px;
     overflow: hidden;
 }
 
@@ -80,26 +80,148 @@ body {
     right: 10px;
 }
 
+.pass {
+    height: 30px;
+    width: 30px;
+}
 .carrusel-txt {
     position: absolute;
-    bottom:20px;
+    margin-left: 5%;
     left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 5%;
     color:aliceblue;
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(2px);
     border-start-end-radius: 50%;
-    max-width: 300px;
+    width: 500px;
+    height: 595px;
+
     
 } 
 
+.cuerpo2 {
+    border: 2px solid red;
+    height: 1700px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    overflow: hidden;
+}
 .anime {
     margin: 50px;
     border: 1px solid blueviolet;
-    height: 200px;
-    width: 150px;
+    height: 300px;
+    width: 250px;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    object-fit: cover;
 }
+
+
+.encabezado {
+    height: 700px;
+    width: 100%;
+    display: flex;
+    overflow: visible;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2%;
+    gap: 30px;
+}
+
+.dropwon {
+    position: relative;
+    margin: 2vh;
+
+}
+
+.dropwon * {
+    box-sizing:border-box;
+}
+
+.select {
+    background-color:aquamarine;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid ghostwhite;
+    border-radius: 0.5%;
+    padding: 1%;
+    cursor: pointer;
+    transition: background 0.3s;   
+}
+
+.select-clicked {
+    border:2px blueviolet solid;
+    box-shadow: 0 0 0.8% rosybrown;
+}
+
+.select:hover {
+    background: blue;
+
+}
+
+.caret {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top:6px solid #fff;
+    transition: 0.3s;
+
+}
+
+.menu1 {
+    list-style: none;
+    padding: 0.2% 0.5%;
+    background: #121212;
+    border: 1px #363636 solid;
+    border-radius: 0.5%;
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+}
+
+.menu1 li {
+    padding: 0.7% 0.5%;
+    margin: 0.3% 0;
+    border-radius: 0.5%;
+    cursor: pointer;
+
+}
+.menu-open {
+    display: block; /* Asegura que el menú sea visible */
+    opacity: 1; /* Asegura que el menú sea totalmente opaco */
+}
+.selected {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.active {
+    background-color: #23242a;
+
+}
+
+.menu1-open {
+    display: block;
+    opacity: 1;
+
+}
+.banner {
+    display: flex;
+    overflow: hidden;
+}
+
 
