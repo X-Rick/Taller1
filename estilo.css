@@ -35,9 +35,8 @@ body {
 
 
 .cuerpo {
-
     border: 2px solid red;
-    max-height: 500px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,15 +47,52 @@ body {
 }
 
 .carrusel {
-    background-image: url("https://preview.redd.it/ogmhbsgy8ht61.jpg?auto=webp&s=ed433d03fcb6e88bfd10db2b6e06afd496af32c1");
-    display: flex;
-    border: 1px solid blue;
-    max-height: 100%;
+    position: relative;
     width: 100%;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat; 
+    height: 500px;
+    overflow: hidden;
 }
+
+.carousel-slide {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease-in-out;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.carrusel-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5%;
+    flex-basis: 25%;
+    color:aliceblue;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    border-start-end-radius: 50%;
+    writing-mode: horizontal-tb;
+}
+
 .anime {
     margin: 50px;
     border: 1px solid blueviolet;
