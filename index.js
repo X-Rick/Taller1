@@ -56,3 +56,4 @@ document.querySelector('.prev').addEventListener('click', antSlide);
 
 updateSlide(currentIndex);
 //pagina reproductor
+

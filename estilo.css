@@ -1,8 +1,12 @@
 body {
     margin: 0;
-    background: black;
+    background-color: black !important;
+    color:#fff !important;
 }
 
+.navbar, .navbar-nav .nav-link, .navbar-brand, .form-control, .btn {
+    color: white !important;
+}
 
 .menu {
     border: 2px solid blue;
@@ -179,6 +183,12 @@ body {
     align-items: center;
 
 }
+
+.Arriba {
+    display: flex;
+    gap: 1000px;
+    flex-direction: row;
+}
 .epi {
     margin-top: 2%;
     display: flex;
@@ -187,8 +197,34 @@ body {
     height: 70px;
     justify-content: center;
     border-radius: 30%;
-    margin-right: 50%;
+    border: 1px solid #2272FF;
+    cursor: pointer;
+    background-color: black;
+    color:#fff;
 }
+
+.epi:hover {
+    background: #2272FF;
+}
+
+.sig {
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 70px;
+    justify-content: center;
+    border-radius: 30%;
+    border: 1px solid #2272FF;
+    cursor: pointer;
+    background-color: black;
+    color:#fff;
+}
+
+.sig:hover {
+    background: #2272FF;
+}
+
 .video1 {
     background-color: #fff;
     border: 1px solid blue; 
