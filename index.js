@@ -1,11 +1,9 @@
 
 const AnimeScopeImg = document.getElementById('AnimeScopeImg');
 AnimeScopeImg.addEventListener('click', () => {
-    window.scrollTo({
-        top:0,
-        behavior: 'smooth',
-    });
-})
+    window.location.href = 'index.html'; // Redirige a la página inicial
+});
+
 
 
 
@@ -58,30 +56,3 @@ document.querySelector('.prev').addEventListener('click', antSlide);
 
 updateSlide(currentIndex);
 //pagina reproductor
-const dropdowns = document.querySelectorAll('.dropwon');
-dropdowns.forEach(dropwon => {
-    const select = dropwon.querySelector('.select');
-    const caret = dropwon.querySelector('.caret');
-    const menu = dropwon.querySelector('.menu1');
-    const options = dropwon.querySelectorAll('.menu1 li'); // Cambiado a querySelectorAll para obtener todas las opciones
-    const selected = dropwon.querySelector('.selected');
-
-    select.addEventListener('click', () => {
-        select.classList.toggle('select-clicked');
-        caret.classList.toggle('caret-rotate');
-        menu.classList.toggle('menu-open');
-    });
-
-    options.forEach(option => {
-        option.addEventListener('click', () => {
-            selected.innerText = option.innerText; // Actualiza el texto seleccionado
-            select.classList.remove('select-clicked');
-            caret.classList.remove('caret-rotate');
-            menu.classList.remove('menu-open');
-            options.forEach(option => {
-                option.classList.remove('active');
-            });
-            option.classList.add('active');
-        });
-    });
-});
