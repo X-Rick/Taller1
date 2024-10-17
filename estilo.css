@@ -122,7 +122,6 @@ body {
     object-fit: cover;
 }
 
-
 .encabezado {
     height: 700px;
     width: 100%;
@@ -132,6 +131,8 @@ body {
     justify-content: center;
     margin-top: 2%;
     gap: 30px;
+    background-color: #000000;
+    color: #2272FF;
 }
 
 .listaC {
@@ -139,29 +140,84 @@ body {
     cursor: pointer;
     display: flex;
     flex-direction: column;
-
-
+    align-items: center;
+    color: aliceblue;
     
 }
 
+.cuerpoAn {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #000000;
+    color: aliceblue;
+    
+}
+.titulo {
+    display: flex;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    width: 130px;
+    
+}
+
+.titulo:hover {
+    background: #fff;
+}
+.parrafo {
+    display: flex;
+    width: 600px;
+    margin-left: 2%;
+    font-size: larger;  
+
+}
+
+.cuerpoVid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.epi {
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 70px;
+    justify-content: center;
+    border-radius: 30%;
+    margin-right: 50%;
+}
+.video1 {
+    background-color: #fff;
+    border: 1px solid blue; 
+    width: 1200px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2%;
+
+}
 .ListaA {
     
     cursor: pointer;
     list-style: none;
     border:1px solid aquamarine;
-    background-color: rgb(180, 177, 171);
+    background-color: #000000;
     display: flex;
     width: 1000px;
     height: 60px;
-    margin: 2%;
-    
+    margin-top: 2%;
     justify-content: center;
     align-items: center;
+    
     
 }
 
 .ListaA:hover {
-    background: #323741;
+    background:#2272FF; 
 
 }
 .banner {
