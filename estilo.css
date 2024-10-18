@@ -26,6 +26,7 @@ body {
     max-height: 100%;
 }
 
+
 .cuenta{
     background-color: orange;
     width: 40px;
@@ -121,11 +122,16 @@ body {
     height: 300px;
     width: 250px;
     display: flex;
-    overflow: hidden;
+    overflow: hidden; /* Asegura que la imagen no se salga del contenedor */
     justify-content: center;
-    object-fit: cover;
+    align-items: center;
 }
 
+.Fotoanime {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ajusta la imagen para que se vea completa */
+}
 .encabezado {
     height: 700px;
     width: 100%;
