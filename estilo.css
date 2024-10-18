@@ -262,6 +262,10 @@ body {
     background:#2272FF; 
 
 }
+
+.reprod {
+    color:#fff !important;
+}
 .banner {
     display: flex;
     overflow: hidden;
