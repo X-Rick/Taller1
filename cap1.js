@@ -73,49 +73,71 @@ const Anime = [
     }
 ]
 
-const urlAnime = new URLSearchParams(window.location.search); //
-const animeId = parseInt(urlAnime.get('id', 10));
+const urlAnime = new URLSearchParams(window.location.search); // esta funcion sirve para jugar literalmente con una url, es decir, permite extraerla y asi facilitar la manipulacion, y window.location.search se encarga de buscar la parte de la url que necesito, en este caso, el ?animeId=1 asi despues en la parte del get obtener el numero que tiene
 
-const AnimeSel = Anime.find(anime => anime.id === animeId);
 
-if(AnimeSel) {
-    document.querySelector('.banner').src = AnimeSel.banner;
-    document.querySelector('.titulo').textContent = AnimeSel.titulo;
-    document.querySelector('.parrafo').textContent = AnimeSel.descripcion;
 
-    const ListaCap = document.querySelector('.listaC ul');
-    AnimeSel.capitulos.forEach(capitulos => { //
-        const li = document.createElement('li');
-        li.classList.add('ListaA');
-        li.innerHTML = `<a href="cap1.html?capitulo=${capitulos.id}">${capitulos.titulo}</a>`;
-        ListaCap.appendChild(li); // 
-    });
-};
+function cargaAnime() {
+    const urlid = new URLSearchParams(window.location.search);
+    const animeId = parseInt(urlid.get('animeId'), 10);
+    const AnimeSel = Anime.find(anime => anime.id === animeId);
+
+    if(AnimeSel) {
+        document.querySelector('.banner').src = AnimeSel.banner;
+        document.querySelector('.titulo').textContent = AnimeSel.titulo;
+        document.querySelector('.parrafo').textContent = AnimeSel.descripcion;
+
+        
+        const ListaCap = document.querySelector('.listaC ul');
+        
+        ListaCap.innerHTML=''; //limpia la lista para que no se repitan los cap
+        AnimeSel.capitulos.forEach(capitulos => { //
+            const li = document.createElement('li');
+            li.classList.add('ListaA');
+            li.innerHTML = `<a href="cap1.html?capitulo=${capitulos.id}">${capitulos.titulo}</a>`;
+            ListaCap.appendChild(li); // 
+        });
+    };
+}
 
 const NumEpi = new URLSearchParams(window.location.search); //mira en que episiodio empieza a reproducirse
-let epid = parseInt(NumEpi.get('capitulo'));
+
 
 
 
 function reproduccirVideo() {
-    const AnimeSel = Anime.find(a => a.capitulos.some(c => c.id === epid));
-    const repro = AnimeSel?.capitulos.find(c => c.id === epid);
+    // se obitne el id del anime desde la url
+    const vid1 = new URLSearchParams(window.location.search);
+    const animeId = parseInt(vid1.get('animeId'), 10);
+    const epid = parseInt(vid1.get('capitulo'), 10);
+
+
+    const AnimeSel = Anime.find(anime => anime.id === animeId); //busca el anime por su id
+    if (!AnimeSel) {
+        alert("Anime no encontrado.");
+        return;
+    }
+
+    const repro = AnimeSel.capitulos.find(c => c.id === epid);
 
     if (repro) {
         const ContRepro = document.getElementById('reprod');
-        
         ContRepro.innerHTML = `<iframe src="${repro.url}" frameborder="1" allowfullscreen class="video1"></iframe>`;
-
     } else {
-        alert("no hay mas episodios");
-    } 
+        alert("No hay más episodios");
+    }
 }
 
+
 document.getElementById('sig').addEventListener('click', () => {
-    epid++;
-    const animeSel = Anime.find(a => a.capitulos.some(c => c.id === epid));
-    if (!animeSel) {
-        window.location.href = 'anime.html'; //esto se hace para volver en caso de que se llegue al final y quiera avanzar 
+    const urlid = new URLSearchParams(window.location.search);
+    const animeId = parseInt(urlid.get('animeId'), 10);
+    let epid = parseInt(urlid.get('capitulo',10));
+
+    const animeSel = Anime.find(a => a.id === animeId);
+    if (animeSel && epid < animeSel.capitulos.length) {
+        epid++;
+        window.location.href = `cap1.html?animeId=${animeId}&capitulo=${epid}`; //esto se hace para volver en caso de que se llegue al final y quiera avanzar 
     }
     reproduccirVideo();
 })
@@ -125,4 +147,5 @@ const EpVideo = document.getElementById('epi');
     window.location.href = 'anime.html'; 
 }); 
 
+cargaAnime();
 reproduccirVideo();
