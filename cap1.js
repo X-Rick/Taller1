@@ -82,70 +82,64 @@ function cargaAnime() {
     const animeId = parseInt(urlid.get('animeId'), 10);
     const AnimeSel = Anime.find(anime => anime.id === animeId);
 
-    if(AnimeSel) {
+    if (AnimeSel) {
         document.querySelector('.banner').src = AnimeSel.banner;
         document.querySelector('.titulo').textContent = AnimeSel.titulo;
         document.querySelector('.parrafo').textContent = AnimeSel.descripcion;
 
-        
         const ListaCap = document.querySelector('.listaC ul');
-        
-        ListaCap.innerHTML=''; //limpia la lista para que no se repitan los cap
-        AnimeSel.capitulos.forEach(capitulos => { //
+        ListaCap.innerHTML = ''; // Limpia la lista para que no se repitan los capítulos
+
+        AnimeSel.capitulos.forEach(capitulos => {
             const li = document.createElement('li');
             li.classList.add('ListaA');
-            li.innerHTML = `<a href="cap1.html?capitulo=${capitulos.id}">${capitulos.titulo}</a>`;
-            ListaCap.appendChild(li); // 
+            li.innerHTML = `<a href="cap1.html?capitulo=${capitulos.id}&animeId=${animeId}">${capitulos.titulo}</a>`;
+            ListaCap.appendChild(li);
         });
-    };
+    } else {
+        alert("Anime no encontrado.");
+    }
 }
-
 const NumEpi = new URLSearchParams(window.location.search); //mira en que episiodio empieza a reproducirse
 
 
 
 
 function reproduccirVideo() {
-    // se obitne el id del anime desde la url
     const vid1 = new URLSearchParams(window.location.search);
-    const animeId = parseInt(vid1.get('animeId'), 10);
-    const epid = parseInt(vid1.get('capitulo'), 10);
+    const animeId = Number(vid1.get('animeId')) || 1;
+    const epid = Number(vid1.get('capitulo')) || 1;
 
-
-    const AnimeSel = Anime.find(anime => anime.id === animeId); //busca el anime por su id
+    const AnimeSel = Anime.find(anime => anime.id === animeId);
     if (!AnimeSel) {
         alert("Anime no encontrado.");
         return;
     }
 
     const repro = AnimeSel.capitulos.find(c => c.id === epid);
-
     if (repro) {
-        const ContRepro = document.getElementById('reprod');
-        ContRepro.innerHTML = `<iframe src="${repro.url}" frameborder="1" allowfullscreen class="video1"></iframe>`;
+        // Redirigir a la lista de capítulos
+        window.location.href = `listaCapitulos.html?animeId=${animeId}`;
     } else {
         alert("No hay más episodios");
     }
 }
 
-
-document.getElementById('sig').addEventListener('click', () => {
-    const urlid = new URLSearchParams(window.location.search);
-    const animeId = parseInt(urlid.get('animeId'), 10);
-    let epid = parseInt(urlid.get('capitulo',10));
-
-    const animeSel = Anime.find(a => a.id === animeId);
-    if (animeSel && epid < animeSel.capitulos.length) {
-        epid++;
-        window.location.href = `cap1.html?animeId=${animeId}&capitulo=${epid}`; //esto se hace para volver en caso de que se llegue al final y quiera avanzar 
-    }
-    reproduccirVideo();
-})
-
-const EpVideo = document.getElementById('epi');
-    EpVideo.addEventListener('click', () => {
-    window.location.href = 'anime.html'; 
-}); 
-
+document.addEventListener('DOMContentLoaded', () => {
+    const sigButton = document.querySelector('.sig');
+    if (sigButton) {
+        sigButton.addEventListener('click', () => {
+            // Tu lógica para el botón "Siguiente"
+        });
+    } 
+});
+document.addEventListener('DOMContentLoaded', () => {
+    const EpVideo = document.getElementById('epi');
+    if (EpVideo) {
+        EpVideo.addEventListener('click', () => {
+            window.location.href = 'anime.html'; 
+        });
+    } 
+});
 cargaAnime();
 reproduccirVideo();
