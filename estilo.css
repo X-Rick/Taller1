@@ -272,3 +272,9 @@ body {
 }
 
 
+.iframeVid {
+    margin-top: 2%;
+    border: 1px solid blue;
+    width: 1500px; 
+    height: 800px; 
+}

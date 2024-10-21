@@ -1,4 +1,5 @@
 
+
 const AnimeScopeImg = document.getElementById('AnimeScopeImg');
 AnimeScopeImg.addEventListener('click', () => {
     window.location.href = 'index.html'; // Redirige a la página inicial
@@ -50,9 +51,14 @@ function antSlide() {
 }
 
 
+
 document.querySelector('.next').addEventListener('click', sigSlide);
 document.querySelector('.prev').addEventListener('click', antSlide);
 
 
-updateSlide(currentIndex);
+
+
+
+//pagina reproductor
+
 

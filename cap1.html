@@ -41,32 +41,11 @@
     <div class="cuerpoVid">
         <div class="Arriba">
             <span class="epi" id="epi">Episodios</span>
-            <span class="sig" id="sig">Siguiente</span>
+            <button class="sig" id="sig">Siguiente</button>
         </div>
         <div class="reprod" id="reprod">
           <h3></h3>
-          <div class="cuerpoAn">
-      
-            <p class="parrafo"> </p>  
-            <div class="listaC">
-              <h3>Lista de capitulos</h3>
-              <ul>
-               
-              </ul>
-            </div>
-          <script>
-            // Obtener el URL del video desde los parámetros de la URL
-            const urlParams = new URLSearchParams(window.location.search);
-            const videoUrl = urlParams.get('videoUrl');
-        
-            if (videoUrl) {
-                const ContRepro = document.getElementById('reprod');
-                ContRepro.innerHTML = `<iframe src="${videoUrl}" frameborder="1" allowfullscreen class="video1"></iframe>`;
-            } else {
-                alert("No se encontró el video.");
-                // Aquí podrías redirigir a otra página o mostrar un mensaje más amigable
-            }
-        </script>
+
         </div>
     </div>
 
