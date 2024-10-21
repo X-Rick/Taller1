@@ -40,7 +40,7 @@ body {
 
 
 .cuerpo {
-    border: 2px solid red;
+    
     height: 600px;
     display: flex;
     flex-direction: column;
@@ -63,13 +63,13 @@ body {
     height: 100%;
     background-size: cover;
     background-position: center;
-    transition: background-image 0.5s ease-in-out;
+    transition: background-image 1.5s ease-in-out;
 }
 
 .prev, .next {
     position: absolute;
     top: 50%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: white;
     color: #fff;
     border: none;
     padding: 10px;
@@ -107,7 +107,7 @@ body {
 } 
 
 .cuerpo2 {
-    border: 2px solid red;
+    
     height: 1700px;
     display: flex;
     flex-direction: column;
@@ -133,7 +133,7 @@ body {
     object-fit: contain; 
 }
 .encabezado {
-    height: 700px;
+    height: 600px;
     width: 100%;
     display: flex;
     overflow: visible;
@@ -146,7 +146,7 @@ body {
 }
 
 .listaC {
-    border: 1px solid rgb(250, 5, 5);
+
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -168,12 +168,13 @@ body {
     display: flex;
     margin-left: 2%;
     margin-bottom: 2%;
-    width: 130px;
+    width: 220px;
     
 }
 
 .titulo:hover {
     background: #fff;
+    
 }
 .parrafo {
     display: flex;
@@ -272,3 +273,14 @@ body {
 }
 
 
+.iframeVid {
+    margin-top: 2%;
+    border: 1px solid blue;
+    width: 1500px; 
+    height: 800px; 
+}
+
+.tituVid {
+    margin-top: 2%;
+
+}
