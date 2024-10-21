@@ -93,6 +93,33 @@ const animes = [
         ]
 
     },
+    {
+        id:11,
+        capitulos: [
+            {id:1,titulo:'El chico que soñaba con ser un pirata',url:'https://www.mp4upload.com/embed-qy6q7nk12mvo.html'},
+            {id:2,titulo:'El primer compañero',url:'https://www.burstcloud.co/embed/e8652d872650f7e2804d86ae255b6115d73f630bbdea25bf2821ad0fd9df5cbf/One Piece - 002 - Arco Romance Dawn.mp4'},
+            {id:3,titulo:'El hombre que se convirtió en una leyenda',url:'https://www.mp4upload.com/embed-g988s1egs5jy.html'}
+        ]
+
+    },
+    {
+        id:12,
+        capitulos: [
+            {id:1,titulo:'Renacimiento',url:'https://www.mp4upload.com/embed-xmm17r8rac6e.html'},
+            {id:2,titulo:'Confrontación',url:'https://www.mp4upload.com/embed-nix9s6ndpvhy.html'},
+            {id:3,titulo:'El Trato',url:'https://www.mp4upload.com/embed-2saak92c0l70.html'}
+        ]
+
+    },
+    {
+        id:13,
+        capitulos: [
+            {id:1,titulo:'Prólogo del principio y el fin',url:'https://terabox.com/sharing/embed?surl=wmlc8rnag6g0'},
+            {id:2,titulo:'Paranoia de viajes en el tiempo',url:'https://terabox.com/sharing/embed?surl=xkbidsgcltp6'},
+            {id:3,titulo:'Paranoia de procesos paralelos',url:'https://terabox.com/sharing/embed?surl=ybfl9m7q16o1'}
+        ]
+
+    },
 
 
 ];

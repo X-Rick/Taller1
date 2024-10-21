@@ -122,6 +122,43 @@ const animes = [
         ]
 
     },
+    {
+        id:11,
+        titulo: 'One piece',
+        descripcion: 'La historia sigue las aventuras de Monkey D. Luffy, un joven pirata con la capacidad de estirar su cuerpo como goma después de comer una "Fruta del Diablo". Luffy sueña con convertirse en el Rey de los Piratas y encontrar el legendario tesoro conocido como "One Piece", que se encuentra al final del peligroso y misterioso Grand Line.',
+        banner:'https://i.pinimg.com/736x/c4/80/b1/c480b1efd5618adf26c3e253859a8628.jpg',
+        capitulos: [
+            {id:1,titulo:'El chico que soñaba con ser un pirata',url:'https://www.mp4upload.com/embed-qy6q7nk12mvo.html'},
+            {id:2,titulo:'El primer compañero',url:'https://www.burstcloud.co/embed/e8652d872650f7e2804d86ae255b6115d73f630bbdea25bf2821ad0fd9df5cbf/One Piece - 002 - Arco Romance Dawn.mp4'},
+            {id:3,titulo:'El hombre que se convirtió en una leyenda',url:'https://www.mp4upload.com/embed-g988s1egs5jy.html'}
+        ]
+
+    },
+    {
+        id:12,
+        titulo: 'Death note',
+        descripcion: ' La historia sigue a Light Yagami, un brillante estudiante de secundaria que encuentra un cuaderno sobrenatural llamado "Death Note". Este cuaderno tiene el poder de matar a cualquier persona cuyo nombre sea escrito en él, siempre que el escritor conozca el rostro de la víctima.',
+        banner:'https://preview.redd.it/jpc798apewk41.png?auto=webp&s=c0e31f40532d67e91abe196df77b7eb691bb7bb9',
+        capitulos: [
+            {id:1,titulo:'Renacimiento',url:'https://www.mp4upload.com/embed-xmm17r8rac6e.html'},
+            {id:2,titulo:'Confrontación',url:'https://www.mp4upload.com/embed-nix9s6ndpvhy.html'},
+            {id:3,titulo:'El Trato',url:'https://www.mp4upload.com/embed-2saak92c0l70.html'}
+        ]
+
+    },
+    {
+        id:13,
+        titulo: 'Stein;Gate',
+        descripcion: ' La historia sigue a Rintarou Okabe, un autodenominado "científico loco", que, junto con sus amigos, descubre accidentalmente cómo enviar mensajes al pasado utilizando un microondas modificado.',
+        banner:'https://i.blogs.es/4c59ee/miembros-laboratorio/450_1000.jpg',
+        capitulos: [
+            {id:1,titulo:'Prólogo del principio y el fin',url:'https://terabox.com/sharing/embed?surl=wmlc8rnag6g0'},
+            {id:2,titulo:'Paranoia de viajes en el tiempo',url:'https://terabox.com/sharing/embed?surl=xkbidsgcltp6'},
+            {id:3,titulo:'Paranoia de procesos paralelos',url:'https://terabox.com/sharing/embed?surl=ybfl9m7q16o1'}
+        ]
+
+    },
+
 
 
 ];
@@ -146,7 +183,7 @@ function cargarAnime() {
         anime.capitulos.forEach(cap => {
             const li = document.createElement('li');
             li.className = 'ListaA';
-            li.innerHTML = `<a href="cap1.html?anime=${animeId}&capitulo=${cap.id}">${cap.titulo}</a>`;
+            li.innerHTML = `<a class='nombreCap' href="cap1.html?anime=${animeId}&capitulo=${cap.id}">${cap.titulo}</a>`;
             listaCapitulos.appendChild(li);
         });
     } else {
