@@ -50,11 +50,12 @@ function antSlide() {
     updateSlide(currentIndex);
 }
 
-
+setInterval(sigSlide, 10000);
 
 document.querySelector('.next').addEventListener('click', sigSlide);
 document.querySelector('.prev').addEventListener('click', antSlide);
 
+updateSlide(currentIndex);
 
 
 
