@@ -74,6 +74,55 @@ const animes = [
         ]
 
     },
+    {
+        id:7,
+        titulo: 'Dragon ball Z',
+        descripcion: 'Es la secuela de la serie original Dragon Ball y sigue las aventuras de Goku, un guerrero Saiyajin con una fuerza sobrehumana, y sus amigos mientras defienden la Tierra de diversos enemigos poderosos, como los Saiyajin, Freezer, Cell y Majin Buu. La serie es conocida por sus intensas batallas, técnicas de artes marciales, transformaciones icónicas como el Super Saiyajin, y temas de superación personal, amistad y protección del planeta. ',
+        banner:'https://static.bandainamcoent.eu/s3fs-public/inline-images/dbfz_banner.jpg',
+        capitulos: [
+            {id:1,titulo:'Aparece un mini Gokū! Son Gohan!',url:'https://www.mp4upload.com/embed-7l183ynqedvz.html'},
+            {id:2,titulo:'¡El guerrero más fuerte de la historia era el hermano de Gokū!',url:'https://www.mp4upload.com/embed-16nrn2ak3v0d.html'},
+            {id:3,titulo:'¡Lo hemos conseguido! Este es el mejor dúo del mundo',url:'https://www.mp4upload.com/embed-f9zbaijja7ud.html'}
+        ]
+
+    },
+    {
+        id:8,
+        titulo: 'Jujutsu Kaisen',
+        descripcion: 'La historia sigue a Yuji Itadori, un estudiante de secundaria con una fuerza física inusual que, tras un encuentro con un objeto maldito, se ve envuelto en el mundo de los jujutsu, técnicas de hechicería utilizadas para combatir maldiciones malignas. Al ingerir un dedo del poderoso espíritu maldito Sukuna Ryoumen, Yuji se convierte en su anfitrión, lo que lo lleva a unirse a la Escuela Técnica de Magia Metropolitana de Tokio para aprender a controlar sus nuevas habilidades y luchar contra las maldiciones.',
+        banner:'https://i.pinimg.com/originals/28/ef/40/28ef40e53d0036c906c3f7ce5445754f.jpg',
+        capitulos: [
+            {id:1,titulo:'Sukuna de la Doble cara',url:'https://www.mp4upload.com/embed-ludw7a0smm25.html'},
+            {id:2,titulo:'Por mí',url:'https://www.mp4upload.com/embed-aqqtgptvnicm.html'},
+            {id:3,titulo:'Chica de acero',url:'https://www.mp4upload.com/embed-doxkv0gmpaam.html'}
+        ]
+
+    },
+    {
+        id:9,
+        titulo: 'Tengen Toppa Gurren-Lagann',
+        descripcion: ' La historia se centra en Simon, un joven excavador que vive en un pueblo subterráneo, y Kamina, un carismático rebelde. Juntos, descubren un mecha gigante llamado Lagann, que usan para escapar a la superficie y luchar contra los "Hombres Bestia" que oprimen a la humanidad.',
+        banner:'https://c4.wallpaperflare.com/wallpaper/205/646/372/anime-tengen-toppa-gurren-lagann-littner-yoko-kamina-wallpaper-thumb.jpg',
+        capitulos: [
+            {id:1,titulo:'¡¡Perfora los cielos con tu taladro!!',url:'https://terabox.com/sharing/embed?surl=i25pfladkvj5'},
+            {id:2,titulo:'¡¡He dicho que yo lo piloto!!',url:'https://terabox.com/sharing/embed?surl=zk35m1y2g1nb'},
+            {id:3,titulo:'¡¡Dos-caras, no me subestimes!!',url:'https://terabox.com/sharing/embed?surl=uj08g4f8lwgc'}
+        ]
+
+    },
+    {
+        id:10,
+        titulo: 'Fire Force',
+        descripcion: 'La historia tiene lugar en un mundo donde misteriosos casos de combustión humana espontánea transforman a las personas en criaturas demoníacas conocidas como Infernales. Para combatir esta amenaza, se crea una fuerza especial de bomberos llamada Fire Force, compuesta por personas con habilidades pirocinéticas.',
+        banner:'https://lh4.googleusercontent.com/proxy/sY-rkPPOdVeR5Op5HMVWgLP8SL5uCOBQ_ERU4Yr4ekrkr4QBf5I9LOkgsgQEoFFN_f34Qqo51WGOxWg0jK4tqwtDKlm2gF15EBocofr7IViQmousKg',
+        capitulos: [
+            {id:1,titulo:'Shinra Kusakabe se enlista',url:'https://www.mp4upload.com/embed-wsh7taqte1i4.html'},
+            {id:2,titulo:'Corazón de soldado de fuego',url:'https://www.mp4upload.com/embed-p10h500avshk.html'},
+            {id:3,titulo:'Juegos de novatos',url:'https://www.mp4upload.com/embed-luszw46gq3d3.html'}
+        ]
+
+    },
+
 
 ];
 
