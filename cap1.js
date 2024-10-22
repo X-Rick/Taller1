@@ -57,6 +57,70 @@ const animes = [
         ]
 
     },
+    {
+        id:7,
+        capitulos: [
+            {id:1,titulo:'Aparece un mini Gokū! Son Gohan!',url:'https://www.mp4upload.com/embed-7l183ynqedvz.html'},
+            {id:2,titulo:'¡El guerrero más fuerte de la historia era el hermano de Gokū!',url:'https://www.mp4upload.com/embed-16nrn2ak3v0d.html'},
+            {id:3,titulo:'¡Lo hemos conseguido! Este es el mejor dúo del mundo',url:'https://www.mp4upload.com/embed-f9zbaijja7ud.html'}
+        ]
+
+    },
+    {
+        id:8,
+        capitulos: [
+            {id:1,titulo:'Sukuna de la Doble cara',url:'https://www.mp4upload.com/embed-ludw7a0smm25.html'},
+            {id:2,titulo:'Por mí',url:'https://www.mp4upload.com/embed-aqqtgptvnicm.html'},
+            {id:3,titulo:'Chica de acero',url:'https://www.mp4upload.com/embed-doxkv0gmpaam.html'}
+        ]
+
+    },
+    {
+        id:9,
+        capitulos: [
+            {id:1,titulo:'¡¡Perfora los cielos con tu taladro!!',url:'https://terabox.com/sharing/embed?surl=i25pfladkvj5'},
+            {id:2,titulo:'¡¡He dicho que yo lo piloto!!',url:'https://terabox.com/sharing/embed?surl=zk35m1y2g1nb'},
+            {id:3,titulo:'¡¡Dos-caras, no me subestimes!!',url:'https://terabox.com/sharing/embed?surl=uj08g4f8lwgc'}
+        ]
+
+    },
+    {
+        id:10,
+        capitulos: [
+            {id:1,titulo:'Shinra Kusakabe se enlista',url:'https://www.mp4upload.com/embed-wsh7taqte1i4.html'},
+            {id:2,titulo:'Corazón de soldado de fuego',url:'https://www.mp4upload.com/embed-p10h500avshk.html'},
+            {id:3,titulo:'Juegos de novatos',url:'https://www.mp4upload.com/embed-luszw46gq3d3.html'}
+        ]
+
+    },
+    {
+        id:11,
+        capitulos: [
+            {id:1,titulo:'El chico que soñaba con ser un pirata',url:'https://www.mp4upload.com/embed-qy6q7nk12mvo.html'},
+            {id:2,titulo:'El primer compañero',url:'https://www.burstcloud.co/embed/e8652d872650f7e2804d86ae255b6115d73f630bbdea25bf2821ad0fd9df5cbf/One Piece - 002 - Arco Romance Dawn.mp4'},
+            {id:3,titulo:'El hombre que se convirtió en una leyenda',url:'https://www.mp4upload.com/embed-g988s1egs5jy.html'}
+        ]
+
+    },
+    {
+        id:12,
+        capitulos: [
+            {id:1,titulo:'Renacimiento',url:'https://www.mp4upload.com/embed-xmm17r8rac6e.html'},
+            {id:2,titulo:'Confrontación',url:'https://www.mp4upload.com/embed-nix9s6ndpvhy.html'},
+            {id:3,titulo:'El Trato',url:'https://www.mp4upload.com/embed-2saak92c0l70.html'}
+        ]
+
+    },
+    {
+        id:13,
+        capitulos: [
+            {id:1,titulo:'Prólogo del principio y el fin',url:'https://terabox.com/sharing/embed?surl=wmlc8rnag6g0'},
+            {id:2,titulo:'Paranoia de viajes en el tiempo',url:'https://terabox.com/sharing/embed?surl=xkbidsgcltp6'},
+            {id:3,titulo:'Paranoia de procesos paralelos',url:'https://terabox.com/sharing/embed?surl=ybfl9m7q16o1'}
+        ]
+
+    },
+
 
 ];
 

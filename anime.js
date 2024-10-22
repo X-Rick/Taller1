@@ -74,6 +74,92 @@ const animes = [
         ]
 
     },
+    {
+        id:7,
+        titulo: 'Dragon ball Z',
+        descripcion: 'Es la secuela de la serie original Dragon Ball y sigue las aventuras de Goku, un guerrero Saiyajin con una fuerza sobrehumana, y sus amigos mientras defienden la Tierra de diversos enemigos poderosos, como los Saiyajin, Freezer, Cell y Majin Buu. La serie es conocida por sus intensas batallas, técnicas de artes marciales, transformaciones icónicas como el Super Saiyajin, y temas de superación personal, amistad y protección del planeta. ',
+        banner:'https://static.bandainamcoent.eu/s3fs-public/inline-images/dbfz_banner.jpg',
+        capitulos: [
+            {id:1,titulo:'Aparece un mini Gokū! Son Gohan!',url:'https://www.mp4upload.com/embed-7l183ynqedvz.html'},
+            {id:2,titulo:'¡El guerrero más fuerte de la historia era el hermano de Gokū!',url:'https://www.mp4upload.com/embed-16nrn2ak3v0d.html'},
+            {id:3,titulo:'¡Lo hemos conseguido! Este es el mejor dúo del mundo',url:'https://www.mp4upload.com/embed-f9zbaijja7ud.html'}
+        ]
+
+    },
+    {
+        id:8,
+        titulo: 'Jujutsu Kaisen',
+        descripcion: 'La historia sigue a Yuji Itadori, un estudiante de secundaria con una fuerza física inusual que, tras un encuentro con un objeto maldito, se ve envuelto en el mundo de los jujutsu, técnicas de hechicería utilizadas para combatir maldiciones malignas. Al ingerir un dedo del poderoso espíritu maldito Sukuna Ryoumen, Yuji se convierte en su anfitrión, lo que lo lleva a unirse a la Escuela Técnica de Magia Metropolitana de Tokio para aprender a controlar sus nuevas habilidades y luchar contra las maldiciones.',
+        banner:'https://i.pinimg.com/originals/28/ef/40/28ef40e53d0036c906c3f7ce5445754f.jpg',
+        capitulos: [
+            {id:1,titulo:'Sukuna de la Doble cara',url:'https://www.mp4upload.com/embed-ludw7a0smm25.html'},
+            {id:2,titulo:'Por mí',url:'https://www.mp4upload.com/embed-aqqtgptvnicm.html'},
+            {id:3,titulo:'Chica de acero',url:'https://www.mp4upload.com/embed-doxkv0gmpaam.html'}
+        ]
+
+    },
+    {
+        id:9,
+        titulo: 'Tengen Toppa Gurren-Lagann',
+        descripcion: ' La historia se centra en Simon, un joven excavador que vive en un pueblo subterráneo, y Kamina, un carismático rebelde. Juntos, descubren un mecha gigante llamado Lagann, que usan para escapar a la superficie y luchar contra los "Hombres Bestia" que oprimen a la humanidad.',
+        banner:'https://c4.wallpaperflare.com/wallpaper/205/646/372/anime-tengen-toppa-gurren-lagann-littner-yoko-kamina-wallpaper-thumb.jpg',
+        capitulos: [
+            {id:1,titulo:'¡¡Perfora los cielos con tu taladro!!',url:'https://terabox.com/sharing/embed?surl=i25pfladkvj5'},
+            {id:2,titulo:'¡¡He dicho que yo lo piloto!!',url:'https://terabox.com/sharing/embed?surl=zk35m1y2g1nb'},
+            {id:3,titulo:'¡¡Dos-caras, no me subestimes!!',url:'https://terabox.com/sharing/embed?surl=uj08g4f8lwgc'}
+        ]
+
+    },
+    {
+        id:10,
+        titulo: 'Fire Force',
+        descripcion: 'La historia tiene lugar en un mundo donde misteriosos casos de combustión humana espontánea transforman a las personas en criaturas demoníacas conocidas como Infernales. Para combatir esta amenaza, se crea una fuerza especial de bomberos llamada Fire Force, compuesta por personas con habilidades pirocinéticas.',
+        banner:'https://lh4.googleusercontent.com/proxy/sY-rkPPOdVeR5Op5HMVWgLP8SL5uCOBQ_ERU4Yr4ekrkr4QBf5I9LOkgsgQEoFFN_f34Qqo51WGOxWg0jK4tqwtDKlm2gF15EBocofr7IViQmousKg',
+        capitulos: [
+            {id:1,titulo:'Shinra Kusakabe se enlista',url:'https://www.mp4upload.com/embed-wsh7taqte1i4.html'},
+            {id:2,titulo:'Corazón de soldado de fuego',url:'https://www.mp4upload.com/embed-p10h500avshk.html'},
+            {id:3,titulo:'Juegos de novatos',url:'https://www.mp4upload.com/embed-luszw46gq3d3.html'}
+        ]
+
+    },
+    {
+        id:11,
+        titulo: 'One piece',
+        descripcion: 'La historia sigue las aventuras de Monkey D. Luffy, un joven pirata con la capacidad de estirar su cuerpo como goma después de comer una "Fruta del Diablo". Luffy sueña con convertirse en el Rey de los Piratas y encontrar el legendario tesoro conocido como "One Piece", que se encuentra al final del peligroso y misterioso Grand Line.',
+        banner:'https://i.pinimg.com/736x/c4/80/b1/c480b1efd5618adf26c3e253859a8628.jpg',
+        capitulos: [
+            {id:1,titulo:'El chico que soñaba con ser un pirata',url:'https://www.mp4upload.com/embed-qy6q7nk12mvo.html'},
+            {id:2,titulo:'El primer compañero',url:'https://www.burstcloud.co/embed/e8652d872650f7e2804d86ae255b6115d73f630bbdea25bf2821ad0fd9df5cbf/One Piece - 002 - Arco Romance Dawn.mp4'},
+            {id:3,titulo:'El hombre que se convirtió en una leyenda',url:'https://www.mp4upload.com/embed-g988s1egs5jy.html'}
+        ]
+
+    },
+    {
+        id:12,
+        titulo: 'Death note',
+        descripcion: ' La historia sigue a Light Yagami, un brillante estudiante de secundaria que encuentra un cuaderno sobrenatural llamado "Death Note". Este cuaderno tiene el poder de matar a cualquier persona cuyo nombre sea escrito en él, siempre que el escritor conozca el rostro de la víctima.',
+        banner:'https://preview.redd.it/jpc798apewk41.png?auto=webp&s=c0e31f40532d67e91abe196df77b7eb691bb7bb9',
+        capitulos: [
+            {id:1,titulo:'Renacimiento',url:'https://www.mp4upload.com/embed-xmm17r8rac6e.html'},
+            {id:2,titulo:'Confrontación',url:'https://www.mp4upload.com/embed-nix9s6ndpvhy.html'},
+            {id:3,titulo:'El Trato',url:'https://www.mp4upload.com/embed-2saak92c0l70.html'}
+        ]
+
+    },
+    {
+        id:13,
+        titulo: 'Stein;Gate',
+        descripcion: ' La historia sigue a Rintarou Okabe, un autodenominado "científico loco", que, junto con sus amigos, descubre accidentalmente cómo enviar mensajes al pasado utilizando un microondas modificado.',
+        banner:'https://i.blogs.es/4c59ee/miembros-laboratorio/450_1000.jpg',
+        capitulos: [
+            {id:1,titulo:'Prólogo del principio y el fin',url:'https://terabox.com/sharing/embed?surl=wmlc8rnag6g0'},
+            {id:2,titulo:'Paranoia de viajes en el tiempo',url:'https://terabox.com/sharing/embed?surl=xkbidsgcltp6'},
+            {id:3,titulo:'Paranoia de procesos paralelos',url:'https://terabox.com/sharing/embed?surl=ybfl9m7q16o1'}
+        ]
+
+    },
+
+
 
 ];
 
@@ -97,7 +183,7 @@ function cargarAnime() {
         anime.capitulos.forEach(cap => {
             const li = document.createElement('li');
             li.className = 'ListaA';
-            li.innerHTML = `<a href="cap1.html?anime=${animeId}&capitulo=${cap.id}">${cap.titulo}</a>`;
+            li.innerHTML = `<a class='nombreCap' href="cap1.html?anime=${animeId}&capitulo=${cap.id}">${cap.titulo}</a>`;
             listaCapitulos.appendChild(li);
         });
     } else {
